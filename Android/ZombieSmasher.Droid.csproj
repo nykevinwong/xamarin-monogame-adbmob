@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{318AE09B-B33D-453D-83FF-F96CEF81437D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MonoGame3D.Droid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>MonoGame3D.Droid</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis />
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <Debugger>Xamarin</Debugger>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkSkip />
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86,x86_64,arm64-v8a</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions>
+    </AndroidStoreUncompressedFileExtensions>
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
+    <DebugSymbols>False</DebugSymbols>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.5.1.1679, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\Android\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net, Version=3.5.1.1679, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\Android\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Ads.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Ads.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\AdMobHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\font.spritefont" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Splash.png" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AboutAssets.txt" />
+    <AndroidAsset Include="Assets\Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="googleplayservices-ads">
+      <Visible>False</Visible>
+      <Version>29.0.0.1</Version>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\levelt.txt" />
+  </ItemGroup>
+  <Import Project="..\MonoGame3D\MonoGame3D.projitems" Label="Shared" Condition="Exists('..\MonoGame3D\MonoGame3D.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+</Project>

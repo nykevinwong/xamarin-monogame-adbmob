@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{EB821538-5759-4582-AE8F-28F30E86887B}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ZombieSmashers</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Attributes\CustomComponentNameAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Attributes\CustomPrefixAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Attributes\DontGenerateAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Attributes\PoolAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Attributes\SingleEntityAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\CodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Generators\BlueprintsGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Generators\ComponentExtensionsGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Generators\ComponentIndicesGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Generators\PoolAttributesGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Generators\PoolsGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Interfaces\IBlueprintsCodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Interfaces\ICodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Interfaces\ICodeGeneratorDataProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Interfaces\IComponentCodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Interfaces\IPoolCodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Intermediate\CodeGenFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Intermediate\ComponentInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\Providers\TypeReflectionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\CodeGenerator\TypeReflectionCodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\EntitasException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Extensions\CollectionExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Extensions\GroupExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Extensions\IMatcherExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Extensions\PoolExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Extensions\TypeExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Group.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\GroupObserver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Interfaces\IComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Interfaces\IExecuteSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Interfaces\IInitializeSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Interfaces\IMatcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Interfaces\IReactiveSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Interfaces\ISystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Matcher\Matcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Matcher\MatcherEquals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Matcher\MatcherInterfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Matcher\MatcherStatic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Matcher\MatcherToString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Matcher\TriggerOnEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Pool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\ReactiveSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Serialization\Blueprints\Blueprint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Serialization\Blueprints\BlueprintEntityExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Serialization\Blueprints\ComponentBlueprint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Serialization\Blueprints\SerializableMember.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Serialization\PublicMemberInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Serialization\TypeSerializationExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entitas\Systems.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)tools\Resolution.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)tools\ResolutionSpriteBatch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Entitas\entitas_version" />
+  </ItemGroup>
+</Project>
